@@ -1689,9 +1689,9 @@ div#preloader {
 }
 
 .contact-form #errormessage {
-  color: red;
+  color: green;
   display: none;
-  border: 1px solid red;
+  border: 1px solid green;
   text-align: center;
   padding: 15px;
   font-weight: 600;
