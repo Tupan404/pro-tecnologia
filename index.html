@@ -241,7 +241,9 @@
               <p class="text-justify">
                   Para maior eficiência do trabalho, nossos atendimentos são prestados exclusivamente no local onde os computadores
                   estão instalados, nosso laboratório é fechado para as manutenções mais complexas para quando necessário retirar o
-                  equipamento para reparos de hardware, limpeza  ou substituição de peças defeituosas.
+                  equipamento para reparos de hardware, limpeza  ou substituição de peças defeituosas. <br>
+
+                  <a href="/img/icon/topo.png" download> clique para baixar </a>
               </p>
               <!-- <ul>
                 <li>
@@ -928,7 +930,7 @@
   </div>
   <!-- awesome-portfolio end -->
   <!-- start pricing area -->
-  <!-- <div id="pricing" class="pricing-area area-padding">
+  <div id="pricing" class="pricing-area area-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -989,7 +991,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- End pricing table area -->
   <!-- Start Testimonials -->
   <div class="testimonials-area">
@@ -1235,22 +1237,22 @@
 
               <form action="enviar.php" method="post" role="form" class="contactForm">
                 <div class="form-group">
-                  <input type="text" name="nome" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Por favor, insira pelo menos 4 caracteres" />
-                  <div class="validation"></div>
+                  <input type="text" name="nome" class="form-control" id="name" placeholder="Seu Nome" required="required" data-validation-required-message="Por favor, insira pelo menos 4 caracteres" />
+                  <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Por favor digite um email válido" />
-                  <div class="validation"></div>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required="required" data-validation-required-message="Por favor digite um email válido" />
+                  <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Por favor, insira pelo menos 8 caracteres de assunto" />
-                  <div class="validation"></div>
+                  <input type="text" class="form-control" name="assunto" id="subject" placeholder="Assunto" required="required" data-validation-required-message="Por favor, insira pelo menos 8 caracteres de assunto" />
+                  <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="conteudo" rows="5" data-rule="required" data-msg="Por favor, escreva algo para nós" placeholder="Mensagem"></textarea>
-                  <div class="validation"></div>
+                  <textarea class="form-control" name="conteudo" rows="5" required="required" data-validation-required-message="Por favor, escreva algo para nós" placeholder="Mensagem"></textarea>
+                  <p class="help-block text-danger"></p>
                 </div>
-                <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+                <div class="text-center"><button id="sendMessageButton" type="submit">Enviar Mensagem</button></div>
                 <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
               </form>
 
