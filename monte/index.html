@@ -36,6 +36,34 @@
 </head>
 
 <body>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"> <br>
+            <a href="https://www.dominioatendimento.com:82/login.html" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+            Sistema para Empresas</button></a> <br> <br>
+
+            <a href="" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+            Sistema para Igrejas</button></a> <br> <br>
+
+            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+            Pague seu honorário</button></a> <br> 
+        
+        </div><br>
+        <div class="modal-footer">
+         
+          <button type="button" class="btn btn-danger" data-dismiss="modal" target="_black">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--==========================
   Header
@@ -44,17 +72,23 @@
     <div class="container">
       
       <div class="logo float-left">
+          <button type="button" class="btn btn-outline-primary" style="border-radius: 30px" data-toggle="modal" data-target="#exampleModal">
+              SAC - Serviço atendimento ao cliente
+            </button>           
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h3><a href="index.html" class="text-primary"><strong>Monte  Libano</a></strong></h3>
+        <!-- <h3><a href="index.html" class="text-primary  title-dif"><strong>Monte  Libano</a></strong></h3> -->
         <!-- <a href="#intro" class="scrollto"><img src="img/icon/topo.png" alt="" class="img-fluid"></a> -->
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
+
+        <li></li>
         <ul>
+          
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">Sobre nós</a></li>
           <li><a href="#services">Serviços</a></li>
-          <!-- <li><a href="#portfolio">Portfólio</a></li> -->
+          <li><a href="#portfolio">Galeria de fotos</a></li>
           <li><a href="#team">Equipe</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
@@ -73,12 +107,13 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
-          <li><a href="#contact">Nosso contato</a></li>
+          <li><a href="#contact">Nosso Contato</a></li>
+          
         </ul>
       </nav><!-- .main-nav -->
       
     </div>
-  </header><!-- #header -->
+  </header> <br> <br> <!-- #header -->
 
   <!--==========================
     Intro Section
@@ -91,10 +126,10 @@
       </div> -->
       
       <div class="intro-info">
-      <h2 class="text-secondary" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Assessoria Contábil específica para seu tipo de negócio !</h2>
+      <!-- <h2 class="text-secondary"></h2> -->
 
-          <a href="https://www.dominioatendimento.com:82/login.html" class="btn-get-started scrollto" target="_black">Sistema</a>
-          <a href="#" class="btn-services scrollto bg-secondary">Sistema Igreja</a>
+          <!-- <a href="https://www.dominioatendimento.com:82/login.html" class="btn-get-started scrollto" target="_black">Sistema</a>
+          <a href="#" class="btn-services scrollto bg-secondary">Sistema Igreja</a> -->
         </div>
      
 
@@ -115,13 +150,15 @@
         </header>
 
         <div class="row about-container">
-
-          <div class="col-lg-6 content order-lg-1 order-2">
+            
+          <div class="col-lg-6 content wow  order-lg-1 order-2">
+            <h4 class="font-weight-bold">Nossa História</h4>
             <p class="text-justify">
                 Atuamos no mercado auxiliando empresas nas áreas contábil, fiscal, trabalhista e tributária. Por meio da dedicação e do comprometimento da nossa equipe, você dispõe de uma linha completa de serviços que facilitam a sua administração financeira.
             </p>
-
+              <h4 class="font-weight-bold">Valores</h4>
             <div class="icon-box wow fadeInUp">
+                
               <div class="icon"><i><img src="img/icon/diagram.png" ></i></div>
               
               <h4 class="title"><a href="">Desenvolvimento</a></h4>
@@ -146,7 +183,7 @@
 
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
             <!-- <img src="img/about-img.svg" class="img-fluid" alt=""> -->
-            <img src="img/sobre1.jpeg" class="img-fluid" alt="">
+            <img src="img/sobre12.jpg" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -156,10 +193,11 @@
             <!-- <img src="img/about-extra-1.svg" class="img-fluid" alt=""> -->
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Sobre a empresa.</h4>
+            <h4>Visão.</h4>
             <p>
                 Com responsabilidade, transparência e ética buscamos a excelência na nossa prestação de serviços, garantindo bons resultados e constante desenvolvimento na área contábil.
             </p>
+            <h4>Missão.</h4>
             <p>
                 Prestar serviços contábeis de qualidade e de forma eficiente, levando conteúdos relevantes e seguros para a sua empresa. 
             </p>
@@ -173,7 +211,7 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>Nossa História.</h4>
+            <h4>Um pouco mais sobre nossa empresa.</h4>
             <p class="text-justify">
                 Aos, 10 de Outubro de 1994, abrimos o nosso escritorio com objetivo de oferecer serviços diferenciado em ASSESSORIA EMPRESARIAL E ECLESIÁSTICA para cidade e Estado de Rondonia. Atuamos no mercado auxiliando as empresas e igrejas, quanto a sua constituição, administração e consultorias. Temos uma equipe de profissionais com larga experiência nas áreas em que atuamos: áreas contábil, fiscal, trabalhista e tributária, na cidade de Ji-Paraná/RO foi o primeiro esritório totalmento ON-LINE, onde o tramite de papel é zero pensando no meio ambiente e agilidade para nossos clientes.
             </p>
@@ -256,7 +294,7 @@
       <div class="container">
         <header class="section-header">
           <h3>Por que nos escolher?</h3>
-          <p>Estamos a 25 anos Contabilizando sonhos.</p>
+          <p>Estamos a 25 anos Contabilizando sucessos.</p>
         </header>
 
         <div class="row row-eq-height justify-content-center">
@@ -326,7 +364,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <!-- <section id="portfolio" class="clearfix">
+    <section id="portfolio" class="clearfix">
       <div class="container">
 
         <header class="section-header">
@@ -475,7 +513,7 @@
         </div>
 
       </div>
-    </section>-->
+    </section>
 
     <!--==========================
       Clients Section
@@ -642,7 +680,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="section-bg">
+    <!-- <section id="clients" class="section-bg">
 
       <div class="container">
 
@@ -705,7 +743,7 @@
 
       </div>
 
-    </section>
+    </section> -->
 
     <!--==========================
       Contact Section

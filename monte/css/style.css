@@ -9,13 +9,13 @@
 # General
 --------------------------------------------------------------*/
 @font-face{
-  font-family: walt_disney;
-  src: url(../font/walt_disney/waltographUI.ttf);
+  font-family: timesnew;
+  src: url(../font/times-new-roman/times-new-roman-14.ttf);
 
 }
 
 .title-dif{
-  font-family: walt_disney;
+  font-family: timesnew;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: #2E66FF;
   transition: 0.5s;
 }
 
@@ -59,7 +59,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #007bff;
+  background: #2E66FF;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -97,7 +97,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #007bff;
+  border-top: 6px solid #2E66FF;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -182,9 +182,9 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: url("../img/fund.png") center bottom no-repeat;
+  background: url("../img/sobre1.jpeg") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 120px 0;
+  padding: 600px 0 100px 100px;
   color: #fff;
 }
 
@@ -225,8 +225,8 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #2E66FF;
+  border: 2px solid #2E66FF;
   color: #fff;
 }
 
@@ -242,7 +242,7 @@ h6 {
 
 #intro .intro-info .btn-services:hover {
   background: #08101a;
-  border-color: #007bff;
+  border-color: #2E66FF;
   color: #fff;
 }
 
@@ -284,7 +284,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  color: #2E66FF;
   text-decoration: none;
 }
 
@@ -322,7 +322,7 @@ h6 {
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active > a,
 .main-nav .drop-down ul li:hover > a {
-  color: #007bff;
+  color: #2E66FF;
 }
 
 .main-nav .drop-down > a:after {
@@ -356,7 +356,7 @@ h6 {
 
 .mobile-nav {
   position: fixed;
-  top: 0;
+  top: 50px;
   bottom: 0;
   z-index: 9999;
   overflow-y: auto;
@@ -548,17 +548,17 @@ h6 {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #007bff;
+  border: 2px solid #2E66FF;
   transition: all 0.3s ease-in-out;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #007bff;
+  color: #2E66FF;
   font-size: 24px;
 }
 
 #about .about-container .icon-box:hover .icon {
-  background: #007bff;
+  background: #2E66FF;
 }
 
 #about .about-container .icon-box:hover .icon i {
@@ -639,7 +639,7 @@ h6 {
 }
 
 #services .box:hover .title a {
-  color: #007bff;
+  color: #2E66FF;
 }
 
 #services .description {
@@ -746,7 +746,7 @@ h6 {
   padding: 6px 20px;
   font-size: 12px;
   line-height: 20px;
-  color: #007bff;
+  color: #2E66FF;
   border-radius: 50px;
   text-transform: uppercase;
   background: #ecf5ff;
@@ -756,7 +756,7 @@ h6 {
 
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
-  background: #007bff;
+  background: #2E66FF;
   color: #fff;
 }
 
@@ -823,7 +823,7 @@ h6 {
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
-  color: #007bff;
+  color: #2E66FF;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
@@ -842,7 +842,7 @@ h6 {
   text-align: center;
   width: 36px;
   height: 36px;
-  background: #007bff;
+  background: #2E66FF;
   border-radius: 50%;
   margin: 10px 4px 0 4px;
 }
@@ -927,7 +927,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #007bff;
+  background-color: #2E66FF;
 }
 
 /* Team Section
@@ -1009,7 +1009,7 @@ h6 {
 }
 
 #team .member .social a:hover {
-  color: #007bff;
+  color: #2E66FF;
 }
 
 #team .member .social i {
@@ -1083,7 +1083,7 @@ h6 {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #007bff;
+  color: #2E66FF;
 }
 
 #contact .contact-about p {
@@ -1101,7 +1101,7 @@ h6 {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #007bff;
+  color: #2E66FF;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1110,11 +1110,11 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #007bff;
+  border: 1px solid #2E66FF;
 }
 
 #contact .social-links a:hover {
-  background: #007bff;
+  background: #2E66FF;
   color: #fff;
 }
 
@@ -1124,7 +1124,7 @@ h6 {
 
 #contact .info i {
   font-size: 32px;
-  color: #007bff;
+  color: #2E66FF;
   float: left;
   line-height: 1;
 }
@@ -1136,8 +1136,8 @@ h6 {
 }
 
 #contact .form #sendmessage {
-  color: #007bff;
-  border: 1px solid #007bff;
+  color: #2E66FF;
+  border: 1px solid #2E66FF;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1177,7 +1177,7 @@ h6 {
 }
 
 #contact .form button[type="submit"] {
-  background: #007bff;
+  background: #2E66FF;
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -1233,7 +1233,7 @@ h6 {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #007bff;
+  background: #2E66FF;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1304,7 +1304,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #007bff;
+  background: #2E66FF;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -1418,6 +1418,6 @@ h6 {
 
 @media (max-width: 574px) {
   #intro {
-    padding: 100px 0 20px 0;
+    padding: 200px 0 20px 0;
   }
 }
