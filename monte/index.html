@@ -10,6 +10,10 @@
   <!-- Favicons -->
   
   <link href="img/icon/topo.png" rel="icon">
+  <link href="img/icon/topo.png" type="image/x-icon" rel="icon" />
+<link href="img/icon/topo.png" type="image/x-icon" rel="shortcut icon" />
+<link href="img/icon/topo.png" rel="apple-touch-icon" />
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -35,35 +39,47 @@
   ======================================================= -->
 </head>
 
+
 <body>
+  
+
+
   <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-primary" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
+      <div class="modal-content" >
+        <div class="modal-header  bg-primary" >
+          <h5 class="modal-title text-white" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body"> <br>
-            <a href="https://www.dominioatendimento.com:82/login.html" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+            <a href="#" target="_black"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm" style="border-radius: 30px">
             Sistema para Empresas</button></a> <br> <br>
-
-            <a href="" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+          
+            <a href="" target="_black"><button type="button" class="btn btn-primary" style="border-radius: 30px">
             Sistema para Igrejas</button></a> <br> <br>
 
-            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-outline-info" style="border-radius: 30px">
+            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-primary" style="border-radius: 30px">
             Pague seu honorário</button></a> <br> 
         
-        </div><br>
-        <div class="modal-footer">
+        </div>
+        <div class="modal-footer bg-primary">
          
           <button type="button" class="btn btn-danger" data-dismiss="modal" target="_black">Fechar</button></div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <h5 class="modal-title" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
+    </div>
+  </div>
+</div>
 
   <!--==========================
   Header
@@ -72,7 +88,7 @@
     <div class="container">
       
       <div class="logo float-left">
-          <button type="button" class="btn btn-outline-primary" style="border-radius: 30px" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" style="border-radius: 30px" data-toggle="modal" data-target="#exampleModal">
               SAC - Serviço atendimento ao cliente
             </button>           
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -857,7 +873,8 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">            
-          <a href="https://sitecontabil.com.br/agendas_obrigacoes" target="_black"><img src="img/calendario.PNG" class="img-fluid" style="height: 80%; width: 150%;" alt=""></a>
+          <a href="https://sitecontabil.com.br/agendas_obrigacoes" target="_black"><img src="img/calendario.PNG" 
+            class="img-fluid" style="height: 100%; width: 100%;" alt=""></a>
           </div>
 
         </div>
