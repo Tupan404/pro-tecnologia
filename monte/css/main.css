@@ -309,7 +309,7 @@ input.input100 {
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-login100-form-btn {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -329,9 +329,9 @@ input.input100 {
   padding: 0 20px;
   width: 100%;
   height: 60px;
-  background-color: #4272d7;
+  background-color: #083C96;
 
-  font-family: OpenSans-Regular;
+ 
   font-size: 14px;
   color: #fff;
   line-height: 1.2;
@@ -344,7 +344,7 @@ input.input100 {
 }
 
 .login100-form-btn:hover {
-  background-color: #333333;
+  background-color: #2659e4;
 }
 
 

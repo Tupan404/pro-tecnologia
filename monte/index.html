@@ -50,36 +50,36 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content" >
-        <div class="modal-header  bg-primary" >
-          <h5 class="modal-title text-white" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
+        <div class="modal-header" style="background: #4A58FF;">
+          <h5 class="modal-title text-white" id="exampleModalLabel" >SAC - Serviço atendimento ao cliente</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div> 
         <div class="modal-body text-center"> 
-            <a href="#" target="_black"><button type="button"  class="btn btn-primary"
-             data-toggle="modal" data-target="#modal-login" >
-             EMPRESAS  </button></a> <br> <br>
+            <a target="_black"><button type="button"  class="btn btn-primary" 
+             data-toggle="modal" data-target="#modal-login" style="width: 50%;  border-radius: 30px;">
+             Empresas  </button></a> <br> <br>
           
-            <a href="#" target="_black"><button type="button" class="btn btn-primary"
-            data-toggle="modal" data-target="#modal-login">
-            IGREJAS</button></a> <br> <br>
+            <a target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login" style="width: 50%;  border-radius: 30px;">
+            Igrejas</button></a> <br> <br>
 
-            <a href="#" target="_black"><button type="button" class="btn btn-primary"
-            data-toggle="modal" data-target="#modal-login" >
-            PRODUTOR RURAL</button></a> <br> <br>
+            <a  target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login" style="width: 50%;  border-radius: 30px;">
+            Produtor Rural</button></a> <br> <br>
 
-            <a href="#" target="_black"><button type="button" class="btn btn-primary"
-            data-toggle="modal" data-target="#modal-login" >
-            EMPREGADA DOMESTICA</button></a> <br> <br>
+            <a  target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login" style="width: 50%;  border-radius: 30px;">
+            Empreada Domestica</button></a> <br> <br>
 
-            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-primary">
-            PAGUE SEU HONORÁRIO</button></a> <br> 
+            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button"
+               class="btn btn-primary" style="width: 50%;  border-radius: 30px;">Pague seu Honorário</button></a> <br> 
         
         </div>
-        <div class="modal-footer bg-primary">
+        <div class="modal-footer">
          
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" target="_black">Fechar</button></div>
+          <button type="button" class="btn btn-outline-primary" data-dismiss="modal" target="_black">Fechar</button></div>
         </div>
       </div>
     </div>
@@ -91,16 +91,15 @@
   <div class="modal-dialog" role="document">
       <div class="modal-content" >
         <div class="modal-header" >
-          <h5 class="modal-title text-primary" id="mySmallModalLabel">Login SAC</h5>
+          <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Login SAC</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body bg-primary"> 
-           
+        <div class="modal-body">           
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
 				<form method="get" action="https://www.dominioatendimento.com/login" id="formDA" name="formDA" class="login100-form validate-form">
-					<span class="login100-form-title p-b-33 text-primary">
+					<span class="login100-form-title p-b-33"  style="color: #083C96;">
 						Acesso Monte Líbano
 					</span>
 
@@ -116,7 +115,7 @@
 						<span class="focus-input100-2"></span>
 					</div>
 
-					<div class="container-login100-form-btn m-t-20">
+					<div class="container-login100-form-btn m-t-20 offset-lg-1">
 						<button class="login100-form-btn" type="submit">
 							Acessar
 						</button>
@@ -129,7 +128,7 @@
         </div> </div>
         <div class="modal-footer">
 
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" target="_black">Fechar</button></div>
+          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
         </div>
       </div>
     </div>
@@ -139,11 +138,11 @@
   <!--==========================
   Header
   ============================-->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top"> 
     <div class="container">
-      
+     
       <div class="logo float-left">
-          <button type="button" class="btn btn-primary" style="border-radius: 30px" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" style="border-radius: 30px; background-color: #2348E8;" data-toggle="modal" data-target="#exampleModal">
               SAC - Serviço atendimento ao cliente
             </button>           
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -440,18 +439,9 @@
 
         <header class="section-header">
           <h3 class="section-title">Galeria de Imagens</h3>
+          <br>
         </header>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Tudo</li>
-              <li data-filter=".filter-app">Clientes</li>
-              <li data-filter=".filter-card">Trabalho</li>
-              <li data-filter=".filter-web">Equipe</li>
-            </ul>
-          </div>
-        </div>
 
         <div class="row portfolio-container">
 
@@ -459,11 +449,11 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/1.jpg" data-lightbox="portfolio" data-title="Amigo" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -471,13 +461,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/team/team-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
+                 
                 </div>
               </div>
             </div>
@@ -487,11 +477,11 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/4.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Dois companheiro" title="Preview"><i class="ion ion-eye"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -499,13 +489,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/5.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -513,13 +503,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
+                  
                 </div>
               </div>
             </div>
@@ -527,13 +517,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/9.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/9.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigos Reunidos" title="Preview"><i class="ion ion-eye"></i></a>
                 </div>
               </div>
             </div>
@@ -541,13 +530,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Familia e Amigo" title="Preview"><i class="ion ion-eye"></i></a>
+                
                 </div>
               </div>
             </div>
@@ -555,13 +544,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Esposa" title="Preview"><i class="ion ion-eye"></i></a>
+                 
                 </div>
               </div>
             </div>
@@ -569,17 +558,62 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="img/portfolio/9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
                 <div>
-                  <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="img/portfolio/9.jpg" class="link-preview" data-lightbox="portfolio" data-title="Dois grandes companheiro" title="Preview"><i class="ion ion-eye"></i></a>
+                
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
+                <div>
+                  <a href="img/portfolio/10.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/11.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
+                <div>
+                  <a href="img/portfolio/11.jpg" class="link-preview" data-lightbox="portfolio" data-title="Familia e Amigos" title="Preview"><i class="ion ion-eye"></i></a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/12.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#"></a></h4>
+                <p>Vizualizar</p>
+                <div>
+                  <a href="img/portfolio/12.jpg" class="link-preview" data-lightbox="portfolio" data-title="Grandes Amigos" title="Preview"><i class="ion ion-eye"></i></a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
         </div>
 
@@ -853,7 +887,7 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" action="enviar.php" role="form" class="contactForm">
+              <form  action="enviar.php" method="post" role="form" class="contactForm">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="nome" class="form-control" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Por favor digite pelo menos 4 caracter." />
