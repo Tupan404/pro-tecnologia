@@ -8,11 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@font-face{
+/* @font-face{
   font-family: timesnew;
   src: url(../font/times-new-roman/times-new-roman-14.ttf);
 
-}
+} */
 
 .title-dif{
   font-family: timesnew;
@@ -1419,6 +1419,12 @@ h6 {
 @media (max-width: 574px) {
   #intro {
     padding: 200px 0 20px 0;
+  }
+}
+
+@media (max-width: 574px) {
+  #login {
+    padding: 10px 0 20px 0;
   }
 }
 

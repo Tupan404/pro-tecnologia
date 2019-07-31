@@ -30,6 +30,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/util.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: NewBiz
@@ -54,32 +56,85 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body"> <br>
-            <a href="#" target="_black"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm" style="border-radius: 30px">
-            Sistema para Empresas</button></a> <br> <br>
+        <div class="modal-body text-center"> 
+            <a href="#" target="_black"><button type="button"  class="btn btn-primary"
+             data-toggle="modal" data-target="#modal-login" >
+             EMPRESAS  </button></a> <br> <br>
           
-            <a href="" target="_black"><button type="button" class="btn btn-primary" style="border-radius: 30px">
-            Sistema para Igrejas</button></a> <br> <br>
+            <a href="#" target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login">
+            IGREJAS</button></a> <br> <br>
 
-            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-primary" style="border-radius: 30px">
-            Pague seu honorário</button></a> <br> 
+            <a href="#" target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login" >
+            PRODUTOR RURAL</button></a> <br> <br>
+
+            <a href="#" target="_black"><button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#modal-login" >
+            EMPREGADA DOMESTICA</button></a> <br> <br>
+
+            <a href="https://www.mercadopago.com.br/developers" target="_black"><button type="button" class="btn btn-primary">
+            PAGUE SEU HONORÁRIO</button></a> <br> 
         
         </div>
         <div class="modal-footer bg-primary">
          
-          <button type="button" class="btn btn-danger" data-dismiss="modal" target="_black">Fechar</button></div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" target="_black">Fechar</button></div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-    <h5 class="modal-title" id="exampleModalLabel">SAC - Serviço atendimento ao cliente</h5>
+<!-- ======================= LOGIN ========================== -->
+<section class="" id="login">
+  <div class="modal fade bd-example-modal-sm" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+        <div class="modal-header" >
+          <h5 class="modal-title text-primary" id="mySmallModalLabel">Login SAC</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-primary"> 
+           
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
+				<form method="get" action="https://www.dominioatendimento.com/login" id="formDA" name="formDA" class="login100-form validate-form">
+					<span class="login100-form-title p-b-33 text-primary">
+						Acesso Monte Líbano
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
+						<input class="input100" type="text" id="j_username" name="j_username" placeholder="Usuario">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
+						<input class="input100" type="password" id="j_password" name="j_password" placeholder="Senha">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn" type="submit">
+							Acessar
+						</button>
+					</div>
+
+					
+
+				</form>
+        
+        </div> </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" target="_black">Fechar</button></div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  </section>
 
   <!--==========================
   Header
@@ -696,7 +751,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <!-- <section id="clients" class="section-bg">
+    <section id="clients" class="section-bg">
 
       <div class="container">
 
@@ -759,7 +814,7 @@
 
       </div>
 
-    </section> -->
+    </section>
 
     <!--==========================
       Contact Section
@@ -922,6 +977,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/map-custom.js"></script>
 
 </body>
 </html>
