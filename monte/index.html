@@ -152,6 +152,7 @@
   <!-- ============================================ END LOGIN ============================================= -->
 
 
+<!-- ================================================ MODAL ============================================== -->
 
   <div class="modal fade" id="dominio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -164,35 +165,29 @@
         </div> 
         <div class="modal-body"> 
           <div class="row">
-          <div class="col-4 text-center"> <br>
-            <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/web.png" alt=""
-            style="height: 31px; width: 134px; opacity: 0.8;"><p class="lead">Domínio Web</p></a> 
+          <div class="col-4 text-center"> 
+            <a href="#" data-toggle="modal" data-target="#login-restrito"><img src="img/icon/default.png" alt=""
+            style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Domínio Web</p></a> 
            
         </div>
         <div class="col-4 text-center">
-            <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/thomson.jpg" alt="" 
+            <a href="#" data-toggle="modal" data-target="#login-ead"><img src="img/icon/default.png" alt="" 
               style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Portal EAD</p></a>
         </div>
         <div class="col-4 text-center">
-            <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/checkpoint.jpg" alt=""
-            style="height: 64px; width: 140px; opacity: 0.8;"><p class="lead">Checkpoint</p></a>
+            <a href="#" data-toggle="modal" data-target="#login-check"><img src="img/icon/default.png" alt=""
+            style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Checkpoint</p></a>
         </div>
       </div> <br>
       <div class="row">
         <div class="col-4 text-center">
-          <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/empregada.png" alt=""
-          style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Empregada Domestica</p></a>
+          <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/default.png" alt=""
+          style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">ONBALANCE</p></a>
         </div>
         <div class="col-4 text-center">
-            <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/sistem.png" alt=""
-            style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Sistema gestão</p></a>
+            <a href="https://cav.receita.fazenda.gov.br/autenticacao/login"><img src="img/icon/default.png" alt=""
+            style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Ecac</p></a>
           </div>
-          <div class="col-4 text-center">
-              <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/pag.png" alt=""
-              style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Pague seu honoraio</p></a>
-            </div>
-
-
       </div>
 
 
@@ -206,7 +201,162 @@
   </div>
 </div>
 
+<!-- =================================================== END ACESSO RESTRITO MODAL ========================================== -->
 
+<!-- ======================================================== LOGIN DOMINIO WEB ============================================ -->
+
+<section class="" id="login">
+  <div class="modal fade bd-example-modal-sm" id="login-restrito" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+        <div class="modal-header" >
+          <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">           
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
+				<form method="post" action="https://dominio.skyinone.net/usuario/autentica/?auth=ZXJpay5saWJhbm9AZG9taW5pb3dlYi5jb20uYnI6MDAwNWZiMDNhMWQ1ZDJjYWI2NTM3OWQzNDcxOThkZmM=&back_url=http://www.dominioweb.com.br" id="loginForm" name="loginForm" enctype="application/x-www-form-urlencoded">
+					<span class="login100-form-title p-b-33"  style="color: #083C96;">
+						Dominio Web
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
+						<input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
+						<input class="input100" type="password" name="j_idt11" placeholder="Senha">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-20 offset-lg-1">
+						<button class="login100-form-btn" type="submit" name="j_idt13" >
+							Acessar
+						</button>
+					</div>
+
+					
+
+				</form>
+        
+        </div> </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <!-- ============================================================= END LOGIN ACESSO RESTRITO ============================================= -->
+
+<!-- =============================================== MODAL EAD =================================================================== -->
+  <section class="" id="login">
+    <div class="modal fade bd-example-modal-sm" id="login-ead" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+          <div class="modal-header" >
+            <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">           
+          <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
+          <form method="post" action="http://dominiosistemas.webaula.com.br/App/Student/User/Account/Login" id="frmLogin" name="frmLogin">
+            <span class="login100-form-title p-b-33"  style="color: #083C96;">
+              Portal De Educação a Distancia 
+            </span>
+  
+            <div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
+              <input class="input100" type="text" id="infoLogin" name="infoLogin" placeholder="Usuario">
+              <span class="focus-input100-1"></span>
+              <span class="focus-input100-2"></span>
+            </div>
+  
+            <div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
+              <input class="input100" type="password" name="passWord" placeholder="passWord">
+              <span class="focus-input100-1"></span>
+              <span class="focus-input100-2"></span>
+            </div>
+  
+            <div class="container-login100-form-btn m-t-20 offset-lg-1">
+              <button class="login100-form-btn" type="submit" id="frmLoginSubmit" >
+                Acessar
+              </button>
+            </div>
+  
+            
+  
+          </form>
+          
+          </div> </div>
+          <div class="modal-footer">
+  
+            <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+<!-- ===================================================== END PORTAL EAD ============================================= -->
+
+<section class="" id="login">
+  <div class="modal fade bd-example-modal-sm" id="login-check" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+        <div class="modal-header" >
+          <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">           
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
+        <form method="post" action="https://signon.thomsonreuters.com/v2?productid=CPBR&returnto=http%3A%2F%2Fcheckpoint.thomsonreuters.com.br%2Fmaf%2Fapp%2Fauthentication%2Fsignon&bhcp=1"
+         id="form0">
+          <span class="login100-form-title p-b-33"  style="color: #083C96;">
+            Checkpoint
+          </span>
+
+          <div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
+            <input class="input100" type="text" id="Username" name="Username" placeholder="Usuario">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+          </div>
+
+          <div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
+            <input class="input100" class="Password-input" type="Password" name="Password" placeholder="passWord">
+            <span class="focus-input100-1"></span>
+            <span class="focus-input100-2"></span>
+          </div>
+
+          <div class="container-login100-form-btn m-t-20 offset-lg-1">
+            <button class="login100-form-btn" type="submit" name="SignIn" >
+              Acessar
+            </button>
+          </div>
+
+          
+
+        </form>
+        
+        </div> </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
   <!--==========================
   Header
