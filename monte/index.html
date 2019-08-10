@@ -58,7 +58,7 @@
         <div class="modal-body"> 
           <div class="row">
           <div class="col-4 text-center">
-            <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/empresa.png" alt=""
+            <a href="#" data-toggle="modal" data-target="#modal-login" target="_black"><img src="img/icon/empresa.png" alt=""
             style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Empresas</p></a> 
            
         </div>
@@ -75,9 +75,13 @@
         <div class="col-4 text-center">
           <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/empregada.png" alt=""
           style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Empregada Domestica</p></a>
-        </div>        
+        </div>    
+        <div class="col-4 text-center">
+          <a href="#" data-toggle="modal" data-target="#modal-xml"><img src="img/icon/email.png" alt=""
+          style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Envie seu XML</p></a>
+        </div>    
           <div class="col-4 text-center">
-              <a href="#" data-toggle="modal" data-target="#modal-login"><img src="img/icon/pag.png" alt=""
+              <a href="#" data-toggle="modal" data-target="#modal-construcao"><img src="img/icon/pag.png" alt=""
               style="height: 64px; width: 64px; opacity: 0.8;"><p class="lead">Pague Seu Honorário</p></a>
             </div>
             
@@ -106,6 +110,67 @@
     </div>
   </div>
 
+  <!-- ========================== ENVIAR XML MODAL ============================== -->
+
+  <div class="modal fade" id="modal-xml" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: #003B7A" id="exampleModalLabel">Envia o XML da sua empresa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> 
+        <div class="modal-body"> 
+            <form class="form-horizontal" method="POST" action="envia.php" enctype="multipart/form-data">
+              <fieldset>
+            
+          <br>
+            
+            <!-- Campo: Nome -->
+            <div class="form-group">               
+            <div class="col-md-8">
+              <input id="nome" name="nome" placeholder="Informe seu nome" class="form-control input-md" required="" type="text">
+            </div>
+            </div>
+            <br>
+            <!-- Campo: Assunto -->
+            <div class="form-group">              
+            <div class="col-md-8">
+              <input id="assunto" name="assunto" placeholder="Informe a sua empresa" class="form-control input-md" required="" type="text">
+            </div>
+            </div>
+            <br>
+             <!-- Campo: anexo --> 
+              <div class="form-group">
+                  <label class="col-md-4 control-label" for="arquivo">Anexo</label>
+                <div class="col-md-8">
+                  <input id="arquivo" name="arquivo" class="input-file" type="file">
+                    <span class="help-block text-danger">Limite máximo de 2MB por arquivo</span>
+                </div>
+                </div> 
+          
+            
+            <!-- Botão Enviar -->
+            <div class="form-group">
+              <label class="col-md-8  control-label" for="submit"></label>
+            <div class="col-md-6 offset-3">
+              <button type="submit" class="btn text-white" style="background-color: #003B7A; width:200px;">Enviar</button>
+            </div>
+            </div>
+            
+              </fieldset>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   
   <!-- ========================== SISTEMA GESTÃO MODAL ============================== -->
 
@@ -119,15 +184,12 @@
             </button>
           </div> 
           <div class="modal-body"> 
-            <div class="row">
-              <h4></h4>
-            <div class="col-6 offset-lg-4">
+            <div class="row">              
+              <div class="col-lg-7 col-sm-10 offset-2 text-center">
                 <img src="img/icon/warning.png" alt="" style="width: 150px; height: 150px;"> <br> <br>
-                <h4 style="color: #053b98;">EM CONSTRUÇÃO</h4>
-          </div>
-          
-              
-        </div>
+                <h4 style="color: #053b98;">EM DESENVOLVIMENTO</h4>
+              </div>
+            </div>
   
           </div>
           <div class="modal-footer">
@@ -156,7 +218,7 @@
         <div class="modal-body">  
          
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
-				<form method="get" action="https://www.dominioatendimento.com/login" id="formDA" name="formDA" class="login100-form validate-form">
+				<form method="get" action="https://www.dominioatendimento.com/login" target="_black" id="formDA" name="formDA" class="login100-form validate-form">
 					<span class="login100-form-title p-b-33"  style="color: #083C96;">
 						Acessar Monte Líbano Assessória Contabil
 					</span>
@@ -254,217 +316,6 @@
 
 <!-- =================================================== END ACESSO RESTRITO MODAL ========================================== -->
 
-<!-- ======================================================== LOGIN DOMINIO WEB ============================================ -->
-
-<!-- <section class="" id="login">
-  <div class="modal fade bd-example-modal-sm" id="login-restrito" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" >
-        <div class="modal-header" >
-          <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">           
-        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
-				<form method="post" action="https://dominio.skyinone.net/usuario/autentica/?auth=ZXJpay5saWJhbm9AZG9taW5pb3dlYi5jb20uYnI6MDAwNWZiMDNhMWQ1ZDJjYWI2NTM3OWQzNDcxOThkZmM=&back_url=http://www.dominioweb.com.br" id="loginForm" name="loginForm" enctype="application/x-www-form-urlencoded">
-					<span class="login100-form-title p-b-33"  style="color: #083C96;">
-						Dominio Web
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
-						<input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
-						<span class="focus-input100-1"></span>
-						<span class="focus-input100-2"></span>
-					</div>
-
-					<div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
-						<input class="input100" type="password" name="j_idt11" placeholder="Senha">
-						<span class="focus-input100-1"></span>
-						<span class="focus-input100-2"></span>
-					</div>
-
-					<div class="container-login100-form-btn m-t-20 offset-lg-1">
-						<button class="login100-form-btn" type="submit" name="j_idt13" >
-							Acessar
-						</button>
-					</div>				
-
-				</form>
-        
-        </div> </div>
-        <div class="modal-footer">
-
-          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section> -->
-
-
-  <!-- ============================================================= END LOGIN ACESSO RESTRITO ============================================= -->
-
-<!-- =============================================== MODAL EAD =================================================================== -->
-  <!-- <section class="" id="login">
-    <div class="modal fade bd-example-modal-sm" id="login-ead" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-          <div class="modal-header" >
-            <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">           
-          <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
-          <form method="post" action="http://dominiosistemas.atenalms.com.br//App/Student/News/Panel?vcache=32" class="frmLogin" id="frmLogin" name="frmLogin">
-            <span class="login100-form-title p-b-33"  style="color: #083C96;">
-              Portal De Educação a Distancia 
-            </span>
-  
-            <div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
-              <input class="input100" type="text" id="infoLogin" name="infoLogin" placeholder="Usuario">
-              <span class="focus-input100-1"></span>
-              <span class="focus-input100-2"></span>
-            </div>
-  
-            <div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
-              <input class="input100" type="password" name="passWord" placeholder="Senha">
-              <span class="focus-input100-1"></span>
-              <span class="focus-input100-2"></span>
-            </div>
-  
-            <div class="container-login100-form-btn m-t-20 offset-lg-1">
-              <button id="frmLoginSubmit" class="login100-form-btn" type="submit">
-                Acessar
-              </button>
-            </div>
-  
-            
-  
-          </form>
-          
-          </div> </div>
-          <div class="modal-footer">
-  
-            <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
-<!-- ===================================================== END PORTAL EAD ============================================= -->
-
-  <!-- ======================================================= LOGIN ON BALANCE =============================================== -->
-
-<!-- <section class="" id="login">
-  <div class="modal fade bd-example-modal-sm" id="login-check" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content" >
-        <div class="modal-header" >
-          <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">           
-        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
-        <form role="form" method="post" action="https://signon.thomsonreuters.com/v2?productid=CPBR&returnto=http%3A%2F%2Fcheckpoint.thomsonreuters.com.br%2Fmaf%2Fapp%2Fauthentication%2Fsignon&bhcp=1"
-         id="form0">
-          <span class="login100-form-title p-b-33"  style="color: #083C96;">
-            Checkpoint
-          </span>
-
-          <div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
-            <input class="input100" type="text" id="uid" name="uid" data-qe-id="bmlogin-loginform-uid-input" placeholder="Usuario">
-            <span class="focus-input100-1"></span>
-            <span class="focus-input100-2"></span>
-          </div>
-
-          <div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
-            <input class="input100" class="Password-input" type="password" id="pwd" name="pwd" data-qe-id="bmlogin-loginform-pwd-input" placeholder="Senha">
-            <span class="focus-input100-1"></span>
-            <span class="focus-input100-2"></span>
-          </div>
-
-          <div class="container-login100-form-btn m-t-20 offset-lg-1">
-            <button class="login100-form-btn" type="submit" name="sign-in" >
-              Acessar
-            </button>
-          </div>
-
-          
-
-        </form>
-        
-        </div> </div>
-        <div class="modal-footer">
-
-          <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section> -->
-
-  <!-- ================================================== END LOGIN ON BALANCE ======================================================= -->
-
-
-  <!-- <section class="" id="login">
-    <div class="modal fade bd-example-modal-sm" id="login-on" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" >
-          <div class="modal-header" >
-            <h5 class="modal-title" id="mySmallModalLabel" style="color: #083C96;">Acesso para funcionario</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">           
-          <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50" id="">
-          <form method="post" action="https://onbalance.thomsonreuters.com.br/smb/#/sales/outstanding" name="form">
-            <span class="login100-form-title p-b-33"  style="color: #083C96;">
-              On Banlance 
-            </span>
-  
-            <div class="wrap-input100 validate-input" data-validate = "Digite um usuario válido">
-              <input class="input100" type="text" id="uid" name="uid  " placeholder="Usuario">
-              <span class="focus-input100-1"></span>
-              <span class="focus-input100-2"></span>
-            </div>
-  
-            <div class="wrap-input100 rs1 validate-input" data-validate="Digite a senha correta">
-              <input class="input100" class="Password-input" type="Password" id="pwd" name="pwd" placeholder="Senha">
-              <span class="focus-input100-1"></span>
-              <span class="focus-input100-2"></span>
-            </div>
-  
-            <div class="container-login100-form-btn m-t-20 offset-lg-1">
-              <button class="login100-form-btn" type="submit" id="sign-in" ng-click="signIn(uid, pwd)" 
-              translate="BM.Login.Directive.Button.SignIn">
-                Acessar
-              </button>
-            </div>
-  
-            
-  
-          </form>
-          
-          </div> </div>
-          <div class="modal-footer">
-  
-            <button type="button" class="btn text-white" style="background-color: #003B7A;" data-dismiss="modal" target="_black">Fechar</button></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
-
-<!-- ======================================================= END LOGIN ONBALANCE ===================================================== -->
-
-
 <!-- ========================================================== DOWNLOAD ============================================================ -->
 
   <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -522,7 +373,7 @@
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">Sobre nós</a></li>
           <!-- <li><a href="#services">Serviços</a></li> -->
-          <li><a href="#portfolio">Galeria</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
           <li><a href="#contact">Nosso Contato</a></li>
           <li><a href="#" data-toggle="modal" data-target="#exampleModal1">Download</a></li>
           <li>
@@ -626,7 +477,7 @@
 
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
             <!-- <img src="img/about-img.svg" class="img-fluid" alt=""> -->
-            <img src="img/sobre12.jpg" class="img-fluid" alt="">
+            <a href="https://my.matterport.com/show/?m=3UcdzBBLrdy"><img src="img/sobre12.jpg" class="img-fluid" alt=""></a>
           </div>
         </div>
 
@@ -828,352 +679,6 @@
       </div>
     </section>
 
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <section id="portfolio" class="clearfix">
-      <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Galeria de Imagens</h3>
-          <br>
-        </header>
-
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/1.jpg" data-lightbox="portfolio" data-title="Amigo" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Dois companheiro" title="Preview"><i class="ion ion-eye"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigos Reunidos" title="Preview"><i class="ion ion-eye"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Familia e Amigo" ><i class="ion ion-eye"></i></a>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Esposa" title="Preview"><i class="ion ion-eye"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/9.jpg" class="link-preview" data-lightbox="portfolio" data-title="Dois grandes companheiro" title="Preview"><i class="ion ion-eye"></i></a>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/10.jpg" class="link-preview" data-lightbox="portfolio" data-title="Amigo" title="Preview"><i class="ion ion-eye"></i></a>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/11.jpg" class="link-preview" data-lightbox="portfolio" data-title="Familia  Amigos" ><i class="ion ion-eye"></i></a>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/12.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#"></a></h4>
-                <p>Vizualizar</p>
-                <div>
-                  <a href="img/portfolio/12.jpg" class="link-preview" data-lightbox="portfolio" data-title="Grandes Amigos" title="Preview"><i class="ion ion-eye"></i></a>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </section>
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    
-    <!-- <section id="testimonials" class="section-bg">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Reflexões</h3>
-        </header>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-
-            <div class="owl-carousel testimonials-carousel wow fadeInUp">
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </section> -->
-    
-    
-    <!-- #testimonials -->
-
-    <!--==========================
-      Treinamento Section
-    ============================-->
-
-    <section id="team">
-        <div class="container">
-          <div class="section-header">
-            <h3>Videos e Treinamento</h3>
-            <!-- <p>Equipe Monte Líbano Acessória Contabil.</p> -->
-          </div> <br>
-  <!-- Grid row -->
-<div class="row">
-
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12 mb-4">
-  
-      <!--Modal: Name-->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-  
-          <!--Content-->
-          <div class="modal-content">
-  
-            <!--Body-->
-            <div class="modal-body mb-0 p-0">
-  
-              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                  <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/TP7ZpPAusaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  allowfullscreen></iframe>
-              </div>
-  
-            </div>
-  
-            <!--Footer-->
-            <div class="modal-footer">
-              
-              <a href="https://www.youtube.com/channel/UCC9eUtnbMV4nrIBqLLL6a3w/featured" class="btn rounded-circle" style="background-color: #003B7A;"><i class="fa fa-youtube"
-              style="color: #fff;"></i></a>              
-             
-                
-                <button type="button" class="btn btn-outline-primary text-right" style="border-radius: 20px;" data-dismiss="modal">Fechar</button>
-              
-              </div>
-  
-          </div>
-          <!--/.Content-->
-  
-        </div>
-      </div>
-      <!--Modal: Name-->
-  
-      <a><img class="img-fluid z-depth-1" src="img/treinamento.jpg" alt="video"
-          data-toggle="modal" data-target="#modal1"></a>
-  
-    </div>
-    <!-- Grid column -->
-  
-  
-  </div>
-  <!-- Grid row -->
-
-          </div>
-        </div>
-      </section><!-- #treinamento -->
-
-<script>
-
-$('#modal1').on('hidden.bs.modal', function (e) {
-  // do something...
-  $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
-});
-
-$('#modal6').on('hidden.bs.modal', function (e) {
-  // do something...
-  $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
-});
-
-$('#modal4').on('hidden.bs.modal', function (e) {
-  // do something...
-  $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
-});
-</script>
-
-
 
     <!--==========================
       Team Section
@@ -1181,8 +686,8 @@ $('#modal4').on('hidden.bs.modal', function (e) {
     <section id="team">
       <div class="container">
         <div class="section-header">
-          <h3>Equipe</h3>
-          <p>Equipe Monte Líbano Assessória Contabil.</p>
+          <h3>Dirigentes Corporativos</h3>
+          <p>Grupo de Dirigentes Monte Líbano Assessória Contabil.</p>
         </div>
 
         <div class="row">
@@ -1211,7 +716,7 @@ $('#modal4').on('hidden.bs.modal', function (e) {
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Silvana Rodrigues</h4>
-                  <span>Administradora</span>
+                  <span>Sócia Administradora</span>
                   <!-- <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -1292,7 +797,7 @@ $('#modal4').on('hidden.bs.modal', function (e) {
       <div class="container">
 
         <div class="section-header">
-          <h3>Nossos Convênios De Descontos</h3>
+          <h3>Nossos Convênios de Descontos</h3>
           <p>Temos total satisfação em atender todos nossos cliente de maneira única.</p>
         </div>
 
@@ -1469,12 +974,11 @@ $('#modal4').on('hidden.bs.modal', function (e) {
                    
                  <strong><p class="text-white">Telefone:</p></strong>(69) 98414-8183 <br>
                 <br>
-              <div class="social-links">
-                <a href="https://www.facebook.com/pg/mlibanojp/about/" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-youtube"></i></a>
-              </div>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/mlibanojp/" target="_black" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="https://instagram.com/montelibanocontabil?igshid=1nchpf810dirr" target="_black" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCC9eUtnbMV4nrIBqLLL6a3w/featured" target="_black" class="linkedin"><i class="fa fa-youtube"></i></a>
+                </div>
           </div>
         </div>
       </div>
