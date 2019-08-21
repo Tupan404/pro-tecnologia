@@ -2,8 +2,8 @@
 <?php
   
   /* Valores recebidos do formulário  */
-  $cnh = $_FILES['cnh'];
   $arquivo = $_FILES['arquivo'];
+  $arquivo1 = $_FILES['arquivo1'];
   $nome = $_POST['nome'];
   $assunto = $_POST['assunto'];
    
@@ -28,9 +28,9 @@
   ";
    
   /* Função que codifica o anexo para poder ser enviado na mensagem  */
-  if(file_exists($arquivo["tmp_name"]) and !empty($arquivo)){
+  if(file_exists($arquivo["tmp_name"]) and !empty($arquivo) and $arquivo1["tmp_name"]){
    
-      $fp = fopen($_FILES["arquivo"]["tmp_name"],"rb"); // Abri o arquivo enviado.
+      $fp = fopen($_FILES["arquivo" "arquivo1"]["tmp_name"],"rb"); // Abri o arquivo enviado.
    $anexo = fread($fp,filesize($_FILES["arquivo"]["tmp_name"])); // Le o arquivo aberto na linha anterior
    $anexo = base64_encode($anexo); // Codifica os dados com MIME para o e-mail 
    fclose($fp); // Fecha o arquivo aberto anteriormente
@@ -56,35 +56,9 @@
 
 // ======================================================================================
 
-   /* Função que codifica o anexo para poder ser enviado na mensagem  */
-   if(file_exists($cnh["tmp_name"]) and !empty($cnh)){
-   
-    $fp = fopen($_FILES["cnh"]["tmp_name"],"rb"); // Abri o arquivo enviado.
- $anexo = fread($fp,filesize($_FILES["cnh"]["tmp_name"])); // Le o arquivo aberto na linha anterior
- $anexo = base64_encode($anexo); // Codifica os dados com MIME para o e-mail 
- fclose($fp); // Fecha o arquivo aberto anteriormente
-    $anexo = chunk_split($anexo); // Divide a variável do arquivo em pequenos pedaços para poder enviar
-    $mensagem = "--$boundary\n"; // Nas linhas abaixo possuem os parâmetros de formatação e codificação, juntamente com a inclusão do arquivo anexado no corpo da mensagem
-    $mensagem.= "Content-Transfer-Encoding: 8bits\n"; 
-    $mensagem.= "Content-Type: text/html; charset=\"utf-8\"\n\n";
-    $mensagem.= "$corpo_mensagem\n"; 
-    $mensagem.= "--$boundary\n"; 
-    $mensagem.= "Content-Type: ".$cnh["type"]."\n";  
-    $mensagem.= "Content-Disposition: attachment; filename=\"".$cnh["name"]."\"\n";  
-    $mensagem.= "Content-Transfer-Encoding: base64\n\n";  
-    $mensagem.= "$anexo\n";  
-    $mensagem.= "--$boundary--\r\n"; 
-}
- else // Caso não tenha anexo
- {
- $mensagem = "--$boundary\n"; 
- $mensagem.= "Content-Transfer-Encoding: 8bits\n"; 
- $mensagem.= "Content-Type: text/html; charset=\"utf-8\"\n\n";
- $mensagem.= "$corpo_mensagem\n";
-}
    
   /* Função que envia a mensagem  */
-  if(mail($to, $assunto, $mensagem, $mensagem, $headers))
+  if(mail($to, $assunto, $mensagem, $headers))
   {
    echo "<br><br><center><b><font color='green'>Mensagem enviada com sucesso!";
   } 

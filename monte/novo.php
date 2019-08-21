@@ -31,7 +31,7 @@
   // Tamanho máximo do arquivo (em bytes)
   $tamanhoMaximo = 1000000;
   // Extensões aceitas
-  $extensoes = array(".rar", ".xml");
+  $extensoes = array(".jpeg", ".jpg", ".png");
   // Caminho para onde o arquivo será enviado
   $caminho = "uploads/";
   // Substituir arquivo já existente (true = sim; false = nao)
@@ -43,24 +43,7 @@
       $nomeArquivo = $_FILES["arquivo"]["name"][$i];
       $tamanhoArquivo = $_FILES["arquivo"]["size"][$i];
       $nomeTemporario = $_FILES["arquivo"]["tmp_name"][$i];
-      
-      // Verifica se o arquivo foi colocado no campo
-      if (!empty($nomeArquivo)) {
-      
-          $erro = false;
-      
-          // Verifica se o tamanho do arquivo é maior que o permitido
-          if ($tamanhoArquivo > $tamanhoMaximo) {
-              $erro = "O arquivo " . $nomeArquivo . " não deve ultrapassar " . $tamanhoMaximo. " bytes";
-          } 
-          // Verifica se a extensão está entre as aceitas
-          elseif (!in_array(strrchr($nomeArquivo, "."), $extensoes)) {
-              $erro = "A extensão do arquivo <b>" . $nomeArquivo . "</b> não é válida";
-          } 
-          // Verifica se o arquivo existe e se é para substituir
-          elseif (file_exists($caminho . $nomeArquivo) and !$substituir) {
-              $erro = "O arquivo <b>" . $nomeArquivo . "</b> já existe";
-          }
+    
       
           // Se não houver erro
           if (!$erro) {
@@ -75,7 +58,7 @@
               echo $erro . "<br />";
           }
       }
-  }
+  
 
   /* Função que envia a mensagem  */
   if(mail($to, $assunto, $mensagem, $mensagem, $headers))
