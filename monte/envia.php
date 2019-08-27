@@ -7,8 +7,9 @@
   $assunto = $_POST['assunto'];
    
   /* Destinatário e remetente - EDITAR SOMENTE ESTE BLOCO DO CÓDIGO */
-  $to = "desenvolvimento@whprotecnologia.com";
-  $remetente = "desenvolvimento@whprotecnologia.com"; // Deve ser um email válido do domínio
+  $to = "montelibano.nfe@dominioboxe.com.br, sac@mlibanocontabil.com.br";
+  $remetente = "montelibano.nfe@dominioboxe.com.br, sac@mlibanocontabil.com.br"; 
+   // Deve ser um email válido do domínio
    
   /* Cabeçalho da mensagem  */
   $boundary = "XYZ-" . date("dmYis") . "-ZYX";
@@ -117,8 +118,8 @@
 <div class="container-fluid">
         <div class="row">
             <div class="col-7 offset-2">
-
-                <div class="jumbotron">
+            <br> <br>
+                <div class="jumbotron">  <br> <br>
                   
                       <h3 class="display-4 text-center" style="color: #003B7A">Monte Líbano Contábil</h3>
                       <br>

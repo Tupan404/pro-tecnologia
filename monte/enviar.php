@@ -1,6 +1,6 @@
 <?php
 // Destinatário 
-$para = "desenvolvimento@whprotecnologia.com"; 
+$para = "sac@mlibanocontabil.com.br"; 
  
 // Assunto do e-mail 
 $assunt = "Contato do através do site ..."; 
